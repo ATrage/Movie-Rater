@@ -1,0 +1,52 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div div {
+    display: flex;
+    justify-content: center;
+}
+
+div p {
+    margin: 20px;
+}
+
+h4 {
+    margin-top: -20px;
+}
+
+table {
+    background-color: rgb(239, 239, 239);
+    width: 50%;
+}
+
+td {
+    border-bottom: 2px solid rgb(150, 150, 150);
+    padding-left: 4px;
+}
+
+td + td {
+    border:none;
+    border-left: 4px solid rgb(150, 150, 150);
+    border-bottom: 2px solid rgb(150, 150, 150);
+    text-align: center;
+    width: 20px;
+    padding: 3px;
+    font-weight: 1000;
+    font-size: large;
+    height: 20px;
+}
+
+td + td + td {
+    color: white;
+    border: none;
+    background-color: red;
+}
+
+td + td + td:hover {
+    cursor: pointer;
+}
+
+#sortButton {
+    margin-top: 10px;
+}

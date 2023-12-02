@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <div>
+            <h1>Movie Ratings!</h1>
+        </div>
+        <div>
+            <h4>Rate your favorite <em>(or least favorite)</em> movies!!!</h4>
+        </div>
+        <div>
+            <p>Title:
+                <input type="text" name="" id="title">
+            </p>
+            <p>Rating:
+                <input type="number" name="" id="rating" min="0" max="10">
+            </p>
+        </div>
+        <div>
+            <button type="submit" onclick="submit()">Submit</button>
+        </div>
+        <br>
+        <div class="sortInputs">
+            <input type="radio" name="sort" id="sort1">
+            <label for="sort">Sort alphabetically</label>
+        </div>
+        <div class="sortInputs">
+            <input type="radio" name="sort" id="sort2">
+            <label for="sort">Sort by rating(Lowest to Highest)</label>
+        </div>
+        <div  class="sortInputs">
+            <input type="radio" name="sort" id="sort3">
+            <label for="sort">Sort by rating(Highest to Lowest)</label>
+        </div>
+        <div>
+            <button id="sortButton" onclick="sort()">Sort</button>
+        </div>
+    </div>
+        
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
